@@ -2,7 +2,7 @@
 ; Student Name (John muema michael)
 ; Computer Organization
 ; COSC 2325-2801
-; Date
+; Date 1/28/2021
 ExitProcess proto
 
 .data

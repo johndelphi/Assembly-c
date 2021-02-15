@@ -4,6 +4,6 @@
     <Object Include="Irvine64.obj" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="AddTwoSum_64.asm" />
+    <MASM Include="chapter2registers.asm" />
   </ItemGroup>
 </Project>

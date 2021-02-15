@@ -1,30 +1,45 @@
-Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   01/27/21 23:51:13
-AddTwoSum_64.asm					     Page 1 - 1
+Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   02/14/21 21:56:41
+chapter2registers.asm					     Page 1 - 1
 
 
 				; AddTwoSum_64.asm - Chapter 3 example.
-				;
+				; Student Name (John muema michael)
+				; Computer Organization
+				; COSC 2325-2801
+				; Date 2/14/2021
 				ExitProcess proto
 
  00000000			.data
- 00000000			sum qword 0
-	   0000000000000000
+ 00000000			A qword 5 ; where we store our  A value
+	   0000000000000005
+ 00000008			B qword 7 ; where we store our B value
+	   0000000000000007
+ 00000010			c qword 8 ; where we store our B value
+	   0000000000000008
+ 00000018			D qword 3 ; where we store the value for D
+	   0000000000000003
+ 00000020			sum qword A ; where we will move the total  sum of all the numbers 
+	   0000000000000000 R
 
  00000000			.code
  00000000			main proc
- 00000000  48/ C7 C0			mov	rax,5
-	   00000005
- 00000007  48/ 83 C0 06			add	rax,6
- 0000000B  48/ 89 05			mov   sum,rax
+ 00000000  48/ 8B 05			mov	rax,A   ; moving the value of first num to the rax register
 	   00000000 R
+ 00000007  48/ 03 05			add	rax,B   ; adding and moving the value of (A+b) to rax
+	   00000008 R
+ 0000000E  48/ 03 05			add rax,C   ; adding the value comtained in C to the value of rax
+	   00000010 R
+ 00000015  48/ 03 05			add rax,D   ; adding D to rax and then moving  the total  to rax register
+	   00000018 R
+ 0000001C  48/ 89 05			mov   sum,rax ; moving the total of (A+B+C+D) to sum 
+	   00000020 R
+ 00000023  B9 00000000			mov   ecx,0
+ 00000028  E8 00000000 E		call  ExitProcess
 
- 00000012  B9 00000000			mov   ecx,0
- 00000017  E8 00000000 E		call  ExitProcess
-
- 0000001C			main endp
+ 0000002D			main endp
 				end
-Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   01/27/21 23:51:13
-AddTwoSum_64.asm					     Symbols 2 - 1
+Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   02/14/21 21:56:41
+chapter2registers.asm					     Symbols 2 - 1
 
 
 
@@ -34,14 +49,18 @@ Procedures, parameters, and locals:
                 N a m e                 Type     Value    Attr
 
 ExitProcess  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
-main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 0000001C Public
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 0000002D Public
 
 
 Symbols:
 
                 N a m e                 Type     Value    Attr
 
-sum  . . . . . . . . . . . . . .	QWord	 00000000 _DATA	
+A  . . . . . . . . . . . . . . .	QWord	 00000000 _DATA	
+B  . . . . . . . . . . . . . . .	QWord	 00000008 _DATA	
+D  . . . . . . . . . . . . . . .	QWord	 00000018 _DATA	
+c  . . . . . . . . . . . . . . .	QWord	 00000010 _DATA	
+sum  . . . . . . . . . . . . . .	QWord	 00000020 _DATA	
 
 	   0 Warnings
 	   0 Errors

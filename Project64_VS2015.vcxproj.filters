@@ -4,6 +4,6 @@
     <Object Include="Irvine64.obj" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="chapter2registers.asm" />
+    <MASM Include="DrawTextColors.asm" />
   </ItemGroup>
 </Project>

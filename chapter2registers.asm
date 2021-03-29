@@ -5,7 +5,7 @@
 ; Date 2/14/2021
 ExitProcess proto
 ;description
-using registers: A = (A + B) + (C + D). Assign integer values to the EAX, EBX, ECX, and EDX registers
+;using registers: A = (A + B) + (C + D). Assign integer values to the EAX, EBX, ECX, and EDX registers
 
 .data
 A qword 5 ; where we store our  A value

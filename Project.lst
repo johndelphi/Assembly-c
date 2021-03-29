@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   02/14/21 21:56:41
+Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   03/01/21 16:28:19
 chapter2registers.asm					     Page 1 - 1
 
 
@@ -8,6 +8,8 @@ chapter2registers.asm					     Page 1 - 1
 				; COSC 2325-2801
 				; Date 2/14/2021
 				ExitProcess proto
+				;description
+				;using registers: A = (A + B) + (C + D). Assign integer values to the EAX, EBX, ECX, and EDX registers
 
  00000000			.data
  00000000			A qword 5 ; where we store our  A value
@@ -38,7 +40,7 @@ chapter2registers.asm					     Page 1 - 1
 
  0000002D			main endp
 				end
-Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   02/14/21 21:56:41
+Microsoft (R) Macro Assembler (x64) Version 14.28.29336.0   03/01/21 16:28:19
 chapter2registers.asm					     Symbols 2 - 1
 
 

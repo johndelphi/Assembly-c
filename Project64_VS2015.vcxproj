@@ -130,7 +130,7 @@
     <Object Include="Irvine64.obj" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="DrawTextColors.asm" />
+    <MASM Include="colormarix2.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

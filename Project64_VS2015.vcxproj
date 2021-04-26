@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <MASM Include="PrimeAssembly.asm" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D6E90DB3-C1F6-4832-A283-FA0C2F897436}</ProjectGuid>
     <RootNamespace>Project64_VS2015</RootNamespace>
@@ -126,12 +129,6 @@
       <AssembledCodeListingFile>$(ProjectName).lst</AssembledCodeListingFile>
     </MASM>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Object Include="Irvine64.obj" />
-  </ItemGroup>
-  <ItemGroup>
-    <MASM Include="colormarix2.asm" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
